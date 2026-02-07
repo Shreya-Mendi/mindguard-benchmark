@@ -1,0 +1,59 @@
+Creative Commons Attribution-NonCommercial 4.0 International License
+
+Copyright (c) 2026 MindGuard Benchmark Team
+
+This work is licensed under the Creative Commons Attribution-NonCommercial
+4.0 International License. To view a copy of this license, visit
+http://creativecommons.org/licenses/by-nc/4.0/ or send a letter to Creative
+Commons, PO Box 1866, Mountain View, CA 94042, USA.
+
+You are free to:
+
+  Share - copy and redistribute the material in any medium or format
+  Adapt - remix, transform, and build upon the material
+
+Under the following terms:
+
+  Attribution - You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use.
+
+  NonCommercial - You may not use the material for commercial purposes.
+
+No additional restrictions - You may not apply legal terms or technological
+measures that legally restrict others from doing anything the license permits.
+
+Notices:
+
+  You do not have to comply with the license for elements of the material in
+  the public domain or where your use is permitted by an applicable exception
+  or limitation.
+
+  No warranties are given. The license may not give you all of the permissions
+  necessary for your intended use. For example, other rights such as publicity,
+  privacy, or moral rights may limit how you use the material.
+
+=============================================================================
+
+ADDITIONAL TERMS FOR MINDGUARD BENCHMARK
+
+1. CLINICAL SAFETY NOTICE: This benchmark dataset contains synthetic prompts
+   simulating mental health crises at various severity levels. The content is
+   designed exclusively for evaluating AI model safety, NOT for training
+   mental health chatbots or clinical decision-making tools.
+
+2. RESPONSIBLE USE: Users of this benchmark agree to:
+   a. Include crisis resources (988 Suicide & Crisis Lifeline, Crisis Text
+      Line) in any publication using this benchmark.
+   b. Not use individual prompts to bypass safety filters in AI systems.
+   c. Provide a model card when submitting results to the public leaderboard.
+   d. Conduct a separate validation study before using benchmark results to
+      inform deployment decisions for mental health AI applications.
+
+3. CONTENT WARNING: Researchers working with this dataset may encounter
+   distressing content related to suicidal ideation and self-harm. Please
+   ensure appropriate support resources are available for all team members.
+
+   National Suicide Prevention Lifeline: 988
+   Crisis Text Line: Text HOME to 741741

@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "name": "MindGuard DSpec Private Held-Out Set",
+    "version": "1.0",
+    "description": "Metadata for the private held-out evaluation set. Actual prompts and labels are not included to prevent overfitting. Submit model outputs via the submission portal for evaluation.",
+    "size": 300,
+    "distribution": {
+      "L1": 60,
+      "L2": 60,
+      "L3": 60,
+      "L4": 60,
+      "L5": 60
+    },
+    "scenarios_per_level": 12,
+    "paraphrases_per_scenario": 5,
+    "paraphrase_types": ["A", "B", "C", "D", "E"],
+    "refresh_schedule": "Annual (next refresh: 2027-01)",
+    "submission_endpoint": "https://mindguard-benchmark.org/submit",
+    "submission_format": {
+      "file_type": "jsonl",
+      "required_fields": ["prompt_id", "model_name", "model_version", "response_text"],
+      "optional_fields": ["response_level", "temperature", "top_p", "system_prompt_used"],
+      "example": {
+        "prompt_id": "HOLDOUT_L3_S10_C",
+        "model_name": "gpt-4",
+        "model_version": "2026-01-15",
+        "response_text": "I hear you, and what you're feeling is valid..."
+      }
+    },
+    "evaluation_returns": [
+      "safety_score",
+      "calibration_accuracy",
+      "critical_miss_rate",
+      "consistency_score",
+      "over_escalation_rate",
+      "per_level_breakdown",
+      "failure_case_samples"
+    ],
+    "inter_rater_reliability": {
+      "metric": "Fleiss' Kappa",
+      "minimum_threshold": 0.8,
+      "achieved": 0.87,
+      "annotator_count": 5,
+      "annotator_qualifications": "Licensed clinical psychologists with 5+ years experience"
+    }
+  }
+}

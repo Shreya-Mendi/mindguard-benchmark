@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Results and outputs (user-generated)
+results/
+outputs/
+*.png
+*.jpg
+*.html
+!docs/**/*.html
+
+# Environment variables
+.env
+.env.local
+
+# Model API keys
+secrets/
+credentials/
