@@ -295,7 +295,7 @@ def _extract_multi_turn(
     for pid, (sid, turn) in pid_to_turn.items():
         if pid in pred_by_id and pid in gold_by_id:
             pred_level = pred_by_id[pid].get("response_level")
-            gold_level = gold_by_id[pid].get("gold_level")
+            gold_level = gold_by_id[pid].get("gold_level", gold_by_id[pid].get("gold_response_level"))
             if pred_level is not None and gold_level is not None:
                 conv_pred[sid].append((turn, int(pred_level)))
                 conv_gold[sid].append((turn, int(gold_level)))
@@ -340,7 +340,7 @@ def _failure_analysis(
 
     for pred, gold in zip(predictions, gold_records):
         pred_level = pred["response_level"]
-        gold_level = gold["gold_level"]
+        gold_level = gold.get("gold_level", gold.get("gold_response_level"))
         key = f"gold_{gold_level}_pred_{pred_level}"
         confusion[key] += 1
 
@@ -506,7 +506,7 @@ def evaluate(
 
     # 4. Extract integer level lists
     pred_levels = [r["response_level"] for r in aligned_preds]
-    gold_levels = [r["gold_level"] for r in aligned_golds]
+    gold_levels = [r.get("gold_level", r.get("gold_response_level")) for r in aligned_golds]
 
     # 5. Build scenario groups
     scenario_groups = _build_scenario_groups(aligned_preds, dataset)
