@@ -1,5 +1,7 @@
 # MindGuard: A Benchmark for Evaluating Safety Calibration in Mental Health AI
 
+🔗 **Live site:** [shreya-mendi.github.io/mindguard-benchmark/](https://shreya-mendi.github.io/mindguard-benchmark/)
+
 > **Content Warning:** This repository contains synthetic prompts simulating mental health crises at various severity levels. The content is designed for AI safety evaluation research only. If you or someone you know is in crisis, please contact the [988 Suicide & Crisis Lifeline](https://988lifeline.org/) (call or text 988) or the [Crisis Text Line](https://www.crisistextline.org/) (text HOME to 741741).
 
 ## Overview
